@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class StudyApplication {
-	
-	@RequestMapping("/helloWorld")
-	private String helloWorld() {
-		return "Hello World";
-	}
+
+    @RequestMapping("/helloWorld")
+    private String helloWorld() {
+        return "Hello Spring Boot";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(StudyApplication.class, args);
