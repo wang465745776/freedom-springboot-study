@@ -11,7 +11,7 @@ public class StudyApplication {
 
     @RequestMapping("/helloWorld")
     private String helloWorld() {
-        return "Hello Spring Boot";
+        return "Hello Spring Boot ，";
     }
 
     public static void main(String[] args) {
