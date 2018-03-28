@@ -63,9 +63,11 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 
+		<!-- 添加热部署 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
+			<scope>test</scope>
 		</dependency>
 		
 		<!-- ORM框架：Mybatis -->
