@@ -1,6 +1,9 @@
 # freedom-springboot-study
 此项目用于对Spring Boot进行学习!
 
+## 特别说明
+此分支用于使用mybatis官方提供的快速配置来继承mybatis
+
 ## 框架
 * Spring Boot
 * 持久层框架：mybatis
