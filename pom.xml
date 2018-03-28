@@ -27,7 +27,24 @@
 		<mybatis.version>3.4.1</mybatis.version>
 		<mybatis-spring.version>1.3.0</mybatis-spring.version>
 		<c3p0.version>0.9.1.1</c3p0.version>
+
+		<fastjson.version>1.2.21</fastjson.version>
+
+		<!-- SQL Server的驱动包 -->
+		<sqljdbc4.version>4.0</sqljdbc4.version>
 	</properties>
+
+	<repositories>
+		<!-- 加入 clojars仓库，因为sqljdbc4在这个仓库-->
+		<repository>
+			<id>public</id>
+			<name>clojars</name>
+			<url>http://clojars.org/repo/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -72,6 +89,20 @@
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>${c3p0.version}</version>
+		</dependency>
+
+		<!-- 阿里巴巴的JSON工具类 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
+
+		<!-- SQL Server的驱动包 -->
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>${sqljdbc4.version}</version>
 		</dependency>
 	</dependencies>
 

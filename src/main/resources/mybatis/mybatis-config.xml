@@ -12,7 +12,7 @@
 	</settings>
 	<!-- 别名 -->
 	<typeAliases>
-		<package name="com.wanggt.freedom.springboot.study.dao" />
+		<package name="com.wanggt.freedom.springboot.study.entity" />
 	</typeAliases>
 
 	<plugins>

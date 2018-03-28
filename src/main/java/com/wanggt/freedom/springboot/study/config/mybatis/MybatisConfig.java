@@ -72,7 +72,7 @@ public class MybatisConfig {
 		ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		Resource mybatisConfigXml = resolver.getResource("classpath:mybatis/mybatis-config.xml");
 		sqlSessionFactoryBean.setConfigLocation(mybatisConfigXml);
-
+		
 		// 自动扫描mapping.xml文件，*是通配符,**表示迭代查找
 		try {
 			Resource[] mapperResouces = resolver.getResources("classpath:mybatis/mapper/*Mapper.xml");
