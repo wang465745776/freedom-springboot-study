@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.github.pagehelper.PageInfo;
 import com.wanggt.freedom.springboot.study.entity.PersonBean;
 import com.wanggt.freedom.springboot.study.service.PersonService;
+import com.wanggt.freedom.springboot.study.util.Result;
 import com.wanggt.freedom.springboot.study.util.json.JSONUtil;
 
 /**
@@ -23,8 +24,9 @@ public class PersonController {
 	private PersonService personService;
 
 	@GetMapping("getPersons")
-	public PageInfo<PersonBean> getPersons(String data) {
+	public Result getPersons(String data) {
 		PersonBean bean = JSONUtil.parse(data, PersonBean.class);
-		return personService.getPersons(bean);
+		PageInfo<PersonBean> persons = personService.getPersons(bean);
+		return Result.success().result(persons);
 	}
 }
